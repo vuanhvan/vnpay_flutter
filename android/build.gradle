@@ -63,10 +63,11 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     // implementation files('libs/merchant-1.0.24.aar')
-    implementation files('libs/merchant-1.0.25.aar')
+    // implementation files('libs/merchant-1.0.25.aar')
 
     // implementation project(":libs", configuration = "default")
 
     // api project(':libs')
 
+    compileOnly fileTree(dir: 'libs', include: ['*.aar'])
 }
