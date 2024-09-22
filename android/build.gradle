@@ -18,6 +18,9 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
     }
 }
 
@@ -54,7 +57,11 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.squareup.okhttp3:okhttp:4.2.2"
     implementation 'com.google.code.gson:gson:2.8.6'
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    //implementation fileTree(dir: "libs", include: ["*.aar"])
+
+
     implementation 'androidx.appcompat:appcompat:1.1.0'
     //    implementation files('libs/merchant-1.0.24.aar')
     implementation files('libs/merchant-1.0.25.aar')
