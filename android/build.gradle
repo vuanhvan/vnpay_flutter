@@ -18,9 +18,9 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
-        // flatDir {
-        //     dirs 'libs'
-        // }
+        flatDir {
+            dirs project(':flutter_kgo_vnpay').file('libs')
+        }
     }
 }
 
@@ -71,6 +71,8 @@ dependencies {
 
     // compileOnly fileTree(dir: 'libs', include: ['*.aar'])
 
-    api fileTree(dir: 'libs', include: ['*.aar'])
+    //api fileTree(dir: 'libs', include: ['*.aar'])
+
+    implementation (name: 'merchant-1.0.25', ext: 'aar')
 
 }
