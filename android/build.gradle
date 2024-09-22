@@ -18,9 +18,9 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
-        flatDir {
-            dirs 'libs'
-        }
+        // flatDir {
+        //     dirs 'libs'
+        // }
     }
 }
 
@@ -69,5 +69,8 @@ dependencies {
 
     // api project(':libs')
 
-    compileOnly fileTree(dir: 'libs', include: ['*.aar'])
+    // compileOnly fileTree(dir: 'libs', include: ['*.aar'])
+
+    api fileTree(dir: 'libs', include: ['*.aar'])
+
 }
