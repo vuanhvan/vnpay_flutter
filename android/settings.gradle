@@ -1,2 +1,2 @@
 rootProject.name = 'flutter_kgo_vnpay'
-include ':libs'
+//include ':libs'
