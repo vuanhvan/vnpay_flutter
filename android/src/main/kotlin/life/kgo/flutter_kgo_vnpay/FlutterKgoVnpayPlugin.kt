@@ -84,6 +84,7 @@ class FlutterKgoVnpayPlugin: FlutterPlugin, ActivityAware, MethodCallHandler {
         putExtra("url", paymentUrl)
         putExtra("scheme", scheme)
         putExtra("tmn_code", tmnCode)
+        putExtra("toolbarColor", Color.BLUE)
       }
       VNP_AuthenticationActivity.setSdkCompletedCallback { action ->
         Log.wtf("VNP_AuthenticationActivity", "action: $action")
@@ -125,6 +126,10 @@ class FlutterKgoVnpayPlugin: FlutterPlugin, ActivityAware, MethodCallHandler {
         //Tạo nút sự kiện cho user click từ return url của merchant chuyển hướng về URL: http://success.sdk.merchantbackapp
         //vnp_ResponseCode == 00) / Giao dịch thành công
       }
+
+      int color = getIntent().getExtra("toolbarColor");
+      toolbar.setBackgroundDrawable(new ColorDrawable(color));
+      
       activity?.startActivity(intent)
 //        activityBinding?.activity?.startActivityForResult(intent, 99)
     }
