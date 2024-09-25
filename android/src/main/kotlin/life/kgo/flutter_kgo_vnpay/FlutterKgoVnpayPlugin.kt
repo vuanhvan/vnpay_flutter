@@ -24,6 +24,10 @@ import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry
 import java.lang.ref.WeakReference
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import android.graphics.drawable.ColorDrawable;
+
 /** FlutterKgoVnpayPlugin */
 class FlutterKgoVnpayPlugin: FlutterPlugin, ActivityAware, MethodCallHandler {
   /// The MethodChannel that will the communication between Flutter and native Android
