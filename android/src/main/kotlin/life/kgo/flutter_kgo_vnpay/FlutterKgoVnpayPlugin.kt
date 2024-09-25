@@ -127,6 +127,15 @@ class FlutterKgoVnpayPlugin: FlutterPlugin, ActivityAware, MethodCallHandler {
         //vnp_ResponseCode == 00) / Giao dịch thành công
       }
 
+      //val color = intent.getIntExtra("toolbarColor", 0)
+      //toolbar.background = ColorDrawable(color)
+
+      ActionBar actionBar;
+
+      actionBar = getActionBar(); 
+      ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#93E9FA"));     
+      actionBar.setBackgroundDrawable(colorDrawable);
+
       activity?.startActivity(intent)
 //        activityBinding?.activity?.startActivityForResult(intent, 99)
     }
