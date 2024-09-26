@@ -35,6 +35,7 @@
 
     NSDictionary *value = [call arguments];
     bool isSandbox = value[@"isSandbox"];
+    bool backAction = true;
     NSString *scheme = value[@"scheme"];
     NSString *backAlert = value[@"backAlert"];
     NSString *paymentUrl = value[@"paymentUrl"];
