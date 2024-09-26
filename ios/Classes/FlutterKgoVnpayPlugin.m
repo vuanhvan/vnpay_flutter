@@ -50,6 +50,7 @@
     [CallAppInterface setSchemes:scheme];
     [CallAppInterface setIsSandbox:isSandbox];
     [CallAppInterface setAppBackAlert:backAlert];
+    [CallAppInterface setEnableBackAction:backAction];
     [CallAppInterface showPushPaymentwithPaymentURL:paymentUrl
                                           withTitle:title
                                        iconBackName:iconBackName
