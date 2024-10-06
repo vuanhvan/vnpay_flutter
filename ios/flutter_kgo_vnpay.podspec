@@ -3,15 +3,15 @@
 # Run `pod lib lint flutter_kgo_vnpay.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'flutter_kgo_vnpay'
+  s.name             = 'flutter_vnpay_sdk'
   s.version          = '0.0.1'
   s.summary          = 'A Flutter plugin project to connect with vnpay'
   s.description      = <<-DESC
   A Flutter plugin project to connect with vnpay.
                        DESC
-  s.homepage         = 'http://kgo.life'
+  s.homepage         = 'https://pub.dev/'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Kgo' => 'duongnh@kaopiz.com' }
+  s.author           = { 'Unknow' => 'example@gmail.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
