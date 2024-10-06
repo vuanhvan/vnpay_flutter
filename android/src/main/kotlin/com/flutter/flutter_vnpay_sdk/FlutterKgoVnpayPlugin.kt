@@ -1,4 +1,4 @@
-package life.kgo.flutter_kgo_vnpay
+package com.flutter.flutter_vnpay_sdk
 
 import android.app.Activity
 import android.content.Context
