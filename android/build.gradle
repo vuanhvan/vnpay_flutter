@@ -1,4 +1,4 @@
-group 'com.flutter.flutter_vnpay_sdk'
+group 'life.kgo.flutter_kgo_vnpay'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -19,7 +19,7 @@ rootProject.allprojects {
         google()
         mavenCentral()
         flatDir {
-            dirs project(':flutter_vnpay_sdk').file('libs')
+            dirs project(':flutter_kgo_vnpay').file('libs')
         }
     }
 }
