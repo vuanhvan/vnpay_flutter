@@ -35,7 +35,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: life.kgo.flutter_kgo_vnpay
+        package: com.flutter.flutter_vnpay_sdk
         pluginClass: FlutterKgoVnpayPlugin
       ios:
         pluginClass: FlutterKgoVnpayPlugin
