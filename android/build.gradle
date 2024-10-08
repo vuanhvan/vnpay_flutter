@@ -29,6 +29,9 @@ apply plugin: 'kotlin-android'
 // apply plugin: 'com.android.application'
 
 android {
+
+    namespace("life.kgo.flutter_kgo_vnpay")
+    
     compileSdkVersion 29
     buildToolsVersion '29.0.1'
     compileOptions {
