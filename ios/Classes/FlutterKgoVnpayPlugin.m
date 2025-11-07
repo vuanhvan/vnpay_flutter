@@ -34,7 +34,7 @@
     [CallAppInterface setHomeViewController:[self viewControllerWithWindow:nil]];
 
     NSDictionary *value = [call arguments];
-    bool isSandbox = value[@"isSandbox"];
+    bool isSandbox = NO;// value[@"isSandbox"];
     bool backAction = true;
     NSString *scheme = value[@"scheme"];
     NSString *backAlert = value[@"backAlert"];
